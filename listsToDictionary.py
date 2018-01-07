@@ -21,12 +21,16 @@ favorite_animal2 = ["DOG", "horse", "cat", "spider", "giraffe", "ticks", "dolphi
 
 def make_dict(list1, list2):
     if len(list1) == len(list2):
-        new_dict = zip(list1, list2)
-        return new_dict
+        new_dict = zip(list1, list2) #only a list of tuples here
+        theDictionary = dict(new_dict)
+        return theDictionary
     else:
         new_dict = zip(list2, list1)
-        return new_dict
+        theDictionary = dict(new_dict)
+        return theDictionary
 
 mydict =  make_dict(name,favorite_animal2)
 print mydict
+
+
 
